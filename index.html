@@ -81,13 +81,16 @@
 </footer>
 
 <script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.bottom-nav');
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
   });
 </script>
+
 
 </body>
 </html>
