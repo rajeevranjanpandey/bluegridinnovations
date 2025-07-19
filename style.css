@@ -1,130 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* styles.css */
 
 body {
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
+  background: #f8fafc;
   color: #333;
-  line-height: 1.6;
 }
 
 .top-header {
-  background: #0f4c75;
-  color: #fff;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5rem;
   text-align: center;
-  padding: 1rem;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .bottom-nav {
-  background: #3282b8;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
-  padding: 0.75rem 0;
+  padding: 1rem;
+  margin: 0;
+  gap: 1.5rem;
 }
 
-.bottom-nav ul li {
-  margin: 0 1.2rem;
-}
-
-.bottom-nav ul li a {
+.bottom-nav li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.bottom-nav ul li a:hover {
-  color: #ffd369;
+.bottom-nav li a:hover {
+  text-decoration: underline;
 }
 
-section {
-  padding: 2rem 3rem;
-}
-
-h2 {
-  text-align: center;
-  color: #1b262c;
-  margin-bottom: 1.5rem;
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
 }
 
 .product-box {
-  background: #fff;
-  padding: 1.5rem;
-  margin: 1.5rem auto;
+  background: white;
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.image-block img {
+img {
   max-width: 100%;
-  display: block;
-  margin: 1rem auto;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input, textarea {
-  padding: 0.75rem;
+form input, form textarea, form button {
+  width: 100%;
   font-size: 1rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
-textarea {
-  min-height: 120px;
-}
-
-button {
-  background: #0f4c75;
+form button {
+  background-color: #007bff;
   color: white;
-  padding: 0.75rem;
-  font-size: 1rem;
   border: none;
-  border-radius: 6px;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
-button:hover {
-  background: #3282b8;
+form button:hover {
+  background-color: #0056b3;
 }
 
 footer {
-  background: #0f4c75;
+  background-color: #004aad;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
 
+/* Mobile Friendly */
 @media (max-width: 768px) {
   .top-header {
     font-size: 1.5rem;
+    padding: 1rem;
   }
 
   .bottom-nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-  }
-
-  section {
-    padding: 1rem;
   }
 
   .product-box {
