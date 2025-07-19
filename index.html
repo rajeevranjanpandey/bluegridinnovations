@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wireless Water Tank Level Monitoring System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #007cf0, #00dfd8);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #007cf0;
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+    code {
+      background: #eef;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      background: #007cf0;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    .btn {
+      display: inline-block;
+      background: #00b894;
+      color: white;
+      padding: 12px 24px;
+      margin: 20px 0;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #019875;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wireless Water Tank Level Monitoring System</h1>
+    <p>Powered by Arduino Uno, ESP8266, Ultrasonic Sensor, and OLED Display</p>
+  </header>
+
+  <section>
+    <h2>🔧 Project Overview</h2>
+    <p>This project provides a reliable and wireless method to monitor water levels in a tank using Arduino Uno and ESP8266 modules. The system measures distance using an ultrasonic sensor, sends data over Wi-Fi, and displays it on an OLED screen.</p>
+
+    <h2>📦 Components Used</h2>
+    <ul>
+      <li>Arduino Uno (Main Controller)</li>
+      <li>HC-SR04 Ultrasonic Sensor (Distance Measurement)</li>
+      <li>ESP8266 (Transmitter & Receiver Modules)</li>
+      <li>0.96" OLED Display (Data Output)</li>
+      <li>Wi-Fi Router or ESP-based Wi-Fi bridge</li>
+      <li>5V Power Source / 50W Solar Panel</li>
+    </ul>
+
+    <h2>📐 Block Diagram</h2>
+    <img src="A_block_diagram_of_a_wireless_water_tank_level_mon.png" alt="Block Diagram" />
+
+    <h2>🧠 Combined System Architecture</h2>
+    <img src="A_detailed_block_diagram_illustrates_a_Wireless_Wa.png" alt="System Architecture" />
+
+    <h2>📋 Algorithm</h2>
+    <pre><code>
+1. Start system and initialize components
+2. Arduino Uno measures distance using HC-SR04
+3. Distance sent over serial to Transmitter ESP8266
+4. Transmitter ESP sends distance via UDP to Receiver ESP
+5. Receiver ESP receives data and processes
+6. OLED displays water level in Liters and Percentage
+7. Repeat every 1 second
+    </code></pre>
+
+    <h2>📂 Source Code</h2>
+    <a class="btn" href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank">📁 View Project on GitHub</a>
+
+    <h2>🔌 Power Management</h2>
+    <p>The entire system is optimized for low power consumption. With a 50W solar panel, this setup can continuously run in daylight conditions and charge a battery for nighttime operation.</p>
+
+    <h2>🌐 Hosting & Deployment</h2>
+    <p>This webpage is hosted via <code>GitHub Pages</code> for easy sharing and documentation of the project.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wireless Water Tank Monitor | Made with ❤️ by Rajeev Pandey</p>
+  </footer>
+
+</body>
+</html>
