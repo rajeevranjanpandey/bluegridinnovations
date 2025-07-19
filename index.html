@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlueGrid Innovations | TankiFi</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueGrid Innovations - TankiFi</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-  <div class="top-header">
+  <!-- Top Header -->
+  <header class="top-header">
     <div class="logo">BlueGrid Innovations</div>
-  </div>
+  </header>
+
+  <!-- Navigation -->
   <nav class="bottom-nav">
     <ul>
       <li><a href="#about">About</a></li>
@@ -20,64 +22,53 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-</header>
 
+  <!-- Product Section -->
+  <section id="products">
+    <h2>Our Product: TankiFi</h2>
+    <div class="image-block">
+      <img src="cartoon_overflow.png" alt="Cartoon of tank overflowing" />
+    </div>
 
-  <main>
-    <section class="hero" id="products">
-      <h1>Introducing <span class="highlight">TankiFi</span></h1>
-      <p>Smart Water Tank Monitoring System</p>
-      <img src="images/cartoon1.png" alt="Overflow Cartoon">
-    </section>
+    <div class="product-box">
+      <h3>Daily Water Waste</h3>
+      <p>On average, a family wastes 50-100 liters of water daily due to tank overflow. That’s nearly 36,000 liters a year — enough for 50 days of daily use!</p>
+    </div>
 
-    <section class="problem">
-      <h2>The Problem</h2>
-      <p>Every day, thousands of liters of clean water is wasted due to unattended overflowing tanks in households.</p>
+    <div class="product-box">
+      <h3>Why TankiFi?</h3>
+      <p>TankiFi helps eliminate water wastage by giving you live updates of water level on a display inside your home. It's affordable, easy to install, and requires no plumbing change.</p>
+    </div>
+
+    <div class="product-box">
+      <h3>How It Works</h3>
+      <p>The system uses an ultrasonic sensor and ESP WiFi modules to send water level data wirelessly from your tank to a display unit inside your home.</p>
+    </div>
+
+    <div class="product-box">
+      <h3>Technology Behind</h3>
       <ul>
-        <li>Daily overflow: ~50 liters</li>
-        <li>Monthly waste: 1,500 liters</li>
-        <li>Yearly waste: 18,000 liters</li>
+        <li>Arduino Uno + ESP8266 for tank module</li>
+        <li>ESP8266 + OLED display for home unit</li>
+        <li>WiFi-based communication</li>
+        <li>Solar-compatible low power system</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="solution">
-      <h2>The Solution – <span class="highlight">TankiFi</span></h2>
-      <p><strong>TankiFi</strong> is a smart, Wi-Fi based water level monitoring system.</p>
-      <div class="boxes">
-        <div class="box">
-          <h3>Tank Module</h3>
-          <p>Ultrasonic sensor + ESP + waterproof case</p>
-        </div>
-        <div class="box">
-          <h3>Home Display Module</h3>
-          <p>OLED Display + ESP + Power supply</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="technology">
-      <h2>Technology Used</h2>
-      <ul>
-        <li>Microcontrollers: ESP8266, Arduino Uno</li>
-        <li>Communication: Wi-Fi (router/AP)</li>
-        <li>Sensors: Ultrasonic waterproof sensors</li>
-        <li>Display: OLED 0.96-inch I2C</li>
-      </ul>
-    </section>
-
-    <section class="enquiry">
-      <h2>Enquire About TankiFi</h2>
+    <div class="product-box">
+      <h3>Enquire About TankiFi</h3>
       <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Submit Enquiry</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 BlueGrid Innovations | Smart Living Solutions
+    <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
   </footer>
 
 </body>
