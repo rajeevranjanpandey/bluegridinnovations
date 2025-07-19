@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wireless Water Tank Monitor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Wireless Water Tank Monitoring System - Save water and monitor your tank in real-time." />
+  <title>Smart Water Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #f4f9ff;
-      color: #222;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, #00b4db, #0083b0);
-      padding: 30px 0;
-      text-align: center;
+      background: linear-gradient(135deg, #00b4db, #0083b0);
       color: white;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
     header p {
-      margin: 10px 0 0;
       font-size: 1.2rem;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
 
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+    .section {
+      margin-bottom: 60px;
     }
 
-    h2 {
+    .section h2 {
       color: #0083b0;
-      border-bottom: 2px solid #00b4db;
-      padding-bottom: 5px;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 15px;
+    .section p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    img.block-img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .cta {
+      background: #0083b0;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .cta h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: white;
+      color: #0083b0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #e0f7ff;
     }
 
     footer {
       text-align: center;
-      background: #eee;
       padding: 20px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .card {
-        padding: 15px;
-      }
+      background: #333;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Wireless Water Tank Monitor</h1>
-    <p>Live Monitoring | ESP8266 + Arduino Uno | OLED Display</p>
+    <h1>Smart Wireless Water Tank Monitor</h1>
+    <p>Stop Water Wastage. Start Smart Monitoring. Real-time tank status at your fingertips.</p>
   </header>
 
   <div class="container">
-    <div class="card">
-      <h2>📡 Project Overview</h2>
-      <p>This project monitors water levels in a tank using an ultrasonic sensor connected to Arduino Uno, transmitting data wirelessly via ESP8266 modules to a remote OLED display. It uses Wi-Fi for communication and supports solar operation for low power.</p>
-    </div>
+    <section class="section">
+      <h2>Why This Matters</h2>
+      <p>Every day, thousands of liters of water are wasted due to tank overflow in urban homes. Our smart wireless system prevents wastage and puts control back in your hands. Whether you're home or away — know exactly how much water is in your tank.</p>
+    </section>
 
-    <div class="card">
-      <h2>🔧 Hardware Block Diagram</h2>
-      <img src="images/block.png" alt="Hardware Block Diagram">
-    </div>
+    <section class="section">
+      <h2>Live Monitoring Made Easy</h2>
+      <p>This ESP8266 + Arduino UNO-based system monitors water levels in real time and displays them via Wi-Fi on a second device. No LoRa or cloud dependency. 100% local.</p>
+      <img class="block-img" src="A_block_diagram_of_a_wireless_water_tank_level_mon.png" alt="Hardware Block Diagram">
+    </section>
 
-    <div class="card">
-      <h2>🧠 System Architecture</h2>
-      <img src="images/block2.png"  alt="Software + Hardware Architecture">
-    </div>
+    <section class="section">
+      <h2>Technology Stack</h2>
+      <p>
+        - Arduino Uno (Tank side controller)<br />
+        - Ultrasonic Distance Sensor (DYP-A02YYUW)<br />
+        - ESP8266 Wi-Fi Modules (x2)<br />
+        - 0.96 inch OLED Display<br />
+        - Laptop Wi-Fi Hotspot or Router<br />
+        - Solar Power (Optional / 50W Panel Supported)
+      </p>
+      <img class="block-img" src="A_detailed_block_diagram_illustrates_a_Wireless_Wa.png" alt="System Architecture">
+    </section>
 
-    <div class="card">
-      <h2>📜 Algorithm</h2>
-      <p>1. Initialize sensors and Wi-Fi modules<br>
-         2. Measure distance using ultrasonic sensor<br>
-         3. Convert to water level, percent & liters<br>
-         4. Transmit data via UDP to receiver ESP<br>
-         5. Display on OLED in real time</p>
-    </div>
+    <section class="section">
+      <h2>Save Water. Smartly.</h2>
+      <p>💧 No tank overflow<br />
+        🔌 Low-power (ESP + Solar Panel Supported)<br />
+        📶 Wi-Fi Communication (No server needed)</p>
+    </section>
 
-    <div class="card">
-      <h2>📁 Repository</h2>
-      <p>All source code, circuit diagrams, and documentation are available on <a href="https://github.com/rajeevranjanpandey/watertankmonitor" target="_blank">GitHub</a>.</p>
-    </div>
+    <section class="section">
+      <h2>Get Started Now</h2>
+      <p>This is a fully open-source solution. Build it yourself or share with others who need it. Every drop saved matters.</p>
+    </section>
+  </div>
+
+  <div class="cta">
+    <h3>Ready to Monitor Your Tank?</h3>
+    <a href="https://github.com/rajeevranjanpandey/smartwatertank">View on GitHub</a>
+    <br><br>
+    <a href="https://rajeevranjanpandey.github.io/smartwatertank">Visit Live Demo Site</a>
   </div>
 
   <footer>
-    Made with 💧 by Rajeev Ranjan Pandey
+    &copy; 2025 Smart Water Tank Monitor | Designed for Every Home
   </footer>
 </body>
+
 </html>
