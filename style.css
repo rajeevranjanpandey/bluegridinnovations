@@ -1,33 +1,25 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and Typography */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  padding-bottom: 2rem;
 }
 
-/* Header */
 .top-header {
   background: #0f4c75;
   color: white;
   padding: 1rem;
   text-align: center;
-}
-
-.top-header .logo {
   font-size: 2rem;
   font-weight: bold;
 }
 
-/* Navigation */
 .bottom-nav {
   background: #3282b8;
   padding: 0.5rem 0;
@@ -45,14 +37,12 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  transition: color 0.3s;
 }
 
 .bottom-nav ul li a:hover {
   color: #ffd369;
 }
 
-/* Section */
 section {
   padding: 2rem 3rem;
 }
@@ -60,7 +50,6 @@ section {
 h2 {
   color: #1b262c;
   margin-bottom: 1.5rem;
-  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -73,21 +62,13 @@ h2 {
   max-width: 800px;
 }
 
-.product-box h3 {
-  margin-bottom: 0.8rem;
-  color: #0f4c75;
-}
-
 .image-block img {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto;
+  max-width: 100%;
   display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
 }
 
-/* Form */
 form {
   display: flex;
   flex-direction: column;
@@ -110,71 +91,30 @@ button {
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 button:hover {
   background: #3282b8;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
   background: #0f4c75;
   color: white;
-  margin-top: 2rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-
-  .top-header .logo {
+  .top-header {
     font-size: 1.4rem;
-    padding-bottom: 0.5rem;
   }
 
   .bottom-nav ul {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
   }
 
   section {
-    padding: 1.5rem 1rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .product-box {
     padding: 1rem;
-  }
-
-  .image-block img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
-
-  input, textarea {
-    width: 100%;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .top-header, .bottom-nav {
-    text-align: center;
-  }
-}
-
-/* Optional: Improve font scaling for extra small screens */
-@media (max-width: 480px) {
-  html {
-    font-size: 15px;
   }
 }
