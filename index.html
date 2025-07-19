@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlueGrid Innovations - TankiFi</title>
-
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
   <header class="top-header">
-    <div class="logo">BlueGrid Innovations</div>
+    BlueGrid Innovations
   </header>
 
   <nav class="bottom-nav">
@@ -21,52 +21,40 @@
     </ul>
   </nav>
 
-  <section id="products">
-    <h2>Our Product: TankiFi</h2>
+  <main>
+    <section id="products" class="product-box">
+      <h2>Product: TankiFi (Tank + WiFi)</h2>
+      <img src="cartoon1.png" alt="Overflowing tank cartoon">
+      <p><strong>Daily Water Wastage:</strong> A typical overflow can waste 100–200 liters daily. Over a year, that's over 36,000–73,000 liters per household.</p>
+      <p><strong>Solution:</strong> <em>TankiFi</em> — a smart device that monitors your tank level and alerts before overflow. A small sensor box on your tank + display unit in your home.</p>
+      <p><strong>Technology:</strong> Ultrasonic sensor, WiFi (ESP8266), OLED display, mobile-compatible interface.</p>
+    </section>
 
-    <div class="image-block">
-      <img src="cartoon1.png" alt="Overflowing tank "/>
-    </div>
+    <section id="about" class="product-box">
+      <h2>About</h2>
+      <p>BlueGrid Innovations builds affordable smart home products for Indian households — saving resources and adding convenience.</p>
+    </section>
 
-    <div class="product-box">
-      <h3>Daily Water Waste</h3>
-      <p>On average, a household wastes 50–100 liters of water per day due to tank overflow. That’s more than <strong>36,000 liters/year</strong> — enough to support a family for 50+ days!</p>
-    </div>
+    <section id="history" class="product-box">
+      <h2>History</h2>
+      <p>Founded in 2025 with a mission to reduce water waste and promote smart automation for middle-class homes.</p>
+    </section>
 
-    <div class="product-box">
-      <h3>Why TankiFi?</h3>
-      <p>TankiFi prevents overflow and wastage by sending wireless water-level data from the tank to a display inside your home.</p>
-    </div>
-
-    <div class="product-box">
-      <h3>How It Works</h3>
-      <p>We place one box near your tank, and one inside your home. The tank box uses an ultrasonic sensor and ESP WiFi module to measure and transmit real-time water levels.</p>
-    </div>
-
-    <div class="product-box">
-      <h3>Technology Inside</h3>
-      <ul>
-        <li>Ultrasonic Sensor (HC-SR04 / Waterproof)</li>
-        <li>ESP8266 WiFi Modules</li>
-        <li>OLED Display Unit (0.96”)</li>
-        <li>Arduino-compatible logic</li>
-        <li>Low-power design, solar compatible</li>
-      </ul>
-    </div>
-
-    <div class="product-box">
-      <h3>Enquire About TankiFi</h3>
+    <section id="contact" class="product-box">
+      <h2>Enquire</h2>
+      <p>Email: support@bluegrid.in<br>Phone: +91-98765-43210</p>
       <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Submit Enquiry</button>
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="40"></textarea><br><br>
+        <button type="submit">Submit</button>
       </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
+    &copy; 2025 BlueGrid Innovations. All rights reserved.
   </footer>
 
 </body>
