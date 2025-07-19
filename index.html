@@ -1,162 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Smart Wireless Water Tank Monitoring System - Save water and monitor your tank in real-time." />
-  <title>Smart Water Monitor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #00b4db, #0083b0);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section {
-      margin-bottom: 60px;
-    }
-
-    .section h2 {
-      color: #0083b0;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .section p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    img.block-img {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 20px auto;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-    }
-
-    .cta {
-      background: #0083b0;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .cta h3 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .cta a {
-      text-decoration: none;
-      background: white;
-      color: #0083b0;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .cta a:hover {
-      background: #e0f7ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueGrid Innovations | TankiFi</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
+
   <header>
-    <h1>Smart Wireless Water Tank Monitor</h1>
-    <p>Stop Water Wastage. Start Smart Monitoring. Real-time tank status at your fingertips.</p>
+    <div class="logo">BlueGrid Innovations</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="container">
-    <section class="section">
-      <h2>Why This Matters</h2>
-      <p>Every day, thousands of liters of water are wasted due to tank overflow in urban homes. Our smart wireless system prevents wastage and puts control back in your hands. Whether you're home or away — know exactly how much water is in your tank.</p>
+  <main>
+    <section class="hero" id="products">
+      <h1>Introducing <span class="highlight">TankiFi</span></h1>
+      <p>Smart Water Tank Monitoring System</p>
+      <img src="images/tankifi_cartoon.png" alt="Overflow Cartoon">
     </section>
 
-    <section class="section">
-      <h2>Live Monitoring Made Easy</h2>
-      <p>This ESP8266 + Arduino UNO-based system monitors water levels in real time and displays them via Wi-Fi on a second device. No LoRa or cloud dependency. 100% local.</p>
-      <img class="block-img" src="A_block_diagram_of_a_wireless_water_tank_level_mon.png" alt="Hardware Block Diagram">
+    <section class="problem">
+      <h2>The Problem</h2>
+      <p>Every day, thousands of liters of clean water is wasted due to unattended overflowing tanks in households.</p>
+      <ul>
+        <li>Daily overflow: ~50 liters</li>
+        <li>Monthly waste: 1,500 liters</li>
+        <li>Yearly waste: 18,000 liters</li>
+      </ul>
     </section>
 
-    <section class="section">
-      <h2>Technology Stack</h2>
-      <p>
-        - Arduino Uno (Tank side controller)<br />
-        - Ultrasonic Distance Sensor (DYP-A02YYUW)<br />
-        - ESP8266 Wi-Fi Modules (x2)<br />
-        - 0.96 inch OLED Display<br />
-        - Laptop Wi-Fi Hotspot or Router<br />
-        - Solar Power (Optional / 50W Panel Supported)
-      </p>
-      <img class="block-img" src="A_detailed_block_diagram_illustrates_a_Wireless_Wa.png" alt="System Architecture">
+    <section class="solution">
+      <h2>The Solution – <span class="highlight">TankiFi</span></h2>
+      <p><strong>TankiFi</strong> is a smart, Wi-Fi based water level monitoring system.</p>
+      <div class="boxes">
+        <div class="box">
+          <h3>Tank Module</h3>
+          <p>Ultrasonic sensor + ESP + waterproof case</p>
+        </div>
+        <div class="box">
+          <h3>Home Display Module</h3>
+          <p>OLED Display + ESP + Power supply</p>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Save Water. Smartly.</h2>
-      <p>💧 No tank overflow<br />
-        🔌 Low-power (ESP + Solar Panel Supported)<br />
-        📶 Wi-Fi Communication (No server needed)</p>
+    <section class="technology">
+      <h2>Technology Used</h2>
+      <ul>
+        <li>Microcontrollers: ESP8266, Arduino Uno</li>
+        <li>Communication: Wi-Fi (router/AP)</li>
+        <li>Sensors: Ultrasonic waterproof sensors</li>
+        <li>Display: OLED 0.96-inch I2C</li>
+      </ul>
     </section>
 
-    <section class="section">
-      <h2>Get Started Now</h2>
-      <p>This is a fully open-source solution. Build it yourself or share with others who need it. Every drop saved matters.</p>
+    <section class="enquiry">
+      <h2>Enquire About TankiFi</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
     </section>
-  </div>
-
-  <div class="cta">
-    <h3>Ready to Monitor Your Tank?</h3>
-    <a href="https://github.com/rajeevranjanpandey/smartwatertank">View on GitHub</a>
-    <br><br>
-    <a href="https://rajeevranjanpandey.github.io/smartwatertank">Visit Live Demo Site</a>
-  </div>
+  </main>
 
   <footer>
-    &copy; 2025 Smart Water Tank Monitor | Designed for Every Home
+    &copy; 2025 BlueGrid Innovations | Smart Living Solutions
   </footer>
-</body>
 
+</body>
 </html>
