@@ -203,3 +203,23 @@ footer {
     max-width: 300px;
   }
 }
+.section {
+  padding: 40px 20px;
+  background-color: #f9fbff;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #05445E;
+  border-bottom: 2px solid #189AB4;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
