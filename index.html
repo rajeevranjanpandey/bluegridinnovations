@@ -2,87 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wireless Water Tank Monitoring System using Arduino Uno and ESP8266">
-  <title>Water Tank Monitor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireless Water Tank Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
       background: #f4f9ff;
-      color: #333;
+      color: #222;
     }
+
     header {
-      background: #0077cc;
-      color: white;
-      padding: 1rem 2rem;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      padding: 30px 0;
       text-align: center;
+      color: white;
     }
-    section {
-      padding: 2rem;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    h1, h2 {
-      color: #0077cc;
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
     }
-    .diagram {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2rem 0;
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .diagram img {
-      width: 100%;
-      max-width: 500px;
+
+    .card {
+      background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
     }
+
+    h2 {
+      color: #0083b0;
+      border-bottom: 2px solid #00b4db;
+      padding-bottom: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
     footer {
-      background: #0077cc;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      background: #eee;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Wireless Water Tank Monitoring</h1>
-    <p>GitHub Page: <a href="https://rajeevranjanpandey.github.io/watertankmonitor/" style="color:white; text-decoration:underline;">watertankmonitor</a></p>
+    <h1>Wireless Water Tank Monitor</h1>
+    <p>Live Monitoring | ESP8266 + Arduino Uno | OLED Display</p>
   </header>
-  
-  <section>
-    <h2>Project Overview</h2>
-    <p>This project monitors the water level in a tank using an ultrasonic sensor and Arduino Uno. Data is transmitted wirelessly to a NodeMCU and displayed on an OLED screen. It uses WiFi (ESP8266) for real-time wireless communication.</p>
-  </section>
 
-  <section>
-    <h2>Block Diagrams</h2>
-    <div class="diagram">
-      <div>
-        <h3>Hardware-Level Architecture</h3>
-        <img src="A_block_diagram_of_a_wireless_water_tank_level_mon.png" alt="Hardware Block Diagram">
-      </div>
-      <div>
-        <h3>Combined System Architecture</h3>
-        <img src="A_detailed_block_diagram_illustrates_a_Wireless_Wa.png" alt="System Block Diagram">
-      </div>
+  <div class="container">
+    <div class="card">
+      <h2>📡 Project Overview</h2>
+      <p>This project monitors water levels in a tank using an ultrasonic sensor connected to Arduino Uno, transmitting data wirelessly via ESP8266 modules to a remote OLED display. It uses Wi-Fi for communication and supports solar operation for low power.</p>
     </div>
-  </section>
 
-  <section>
-    <h2>Live Demo & Documentation</h2>
-    <ul>
-      <li><a href="https://github.com/rajeevranjanpandey/watertankmonitor" target="_blank">View GitHub Repository</a></li>
-      <li><a href="README.md" target="_blank">Read Full Documentation</a></li>
-    </ul>
-  </section>
+    <div class="card">
+      <h2>🔧 Hardware Block Diagram</h2>
+      <img src="images/block.png" alt="Hardware Block Diagram">
+    </div>
+
+    <div class="card">
+      <h2>🧠 System Architecture</h2>
+      <img src="images/block2.png"  alt="Software + Hardware Architecture">
+    </div>
+
+    <div class="card">
+      <h2>📜 Algorithm</h2>
+      <p>1. Initialize sensors and Wi-Fi modules<br>
+         2. Measure distance using ultrasonic sensor<br>
+         3. Convert to water level, percent & liters<br>
+         4. Transmit data via UDP to receiver ESP<br>
+         5. Display on OLED in real time</p>
+    </div>
+
+    <div class="card">
+      <h2>📁 Repository</h2>
+      <p>All source code, circuit diagrams, and documentation are available on <a href="https://github.com/rajeevranjanpandey/watertankmonitor" target="_blank">GitHub</a>.</p>
+    </div>
+  </div>
 
   <footer>
-    <p>© 2025 rajeevranjanpandey | Project: Water Tank Monitoring</p>
+    Made with 💧 by Rajeev Ranjan Pandey
   </footer>
 </body>
 </html>
