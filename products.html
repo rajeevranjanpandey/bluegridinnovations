@@ -6,6 +6,17 @@
   <title>BlueGrid Innovations | TankiFi</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+  
 <body>
 
 <header>
