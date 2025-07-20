@@ -3,25 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Team | BlueGrid Innovations</title>
+  <title>BlueGrid Innovations | TankiFi</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+  
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">BlueGrid Innovations</div>
-      <div class="hamburger" id="hamburger">☰</div>
-      <nav class="bottom-nav" id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="team.html" class="active">Team</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+<header>
+  <div class="top-header">
+    <div class="logo">BlueGrid Innovations</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+  <nav class="bottom-nav" id="nav-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a class= "active" href="team.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
 
@@ -33,14 +46,6 @@
     <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const hamburger = document.getElementById('hamburger');
-      const nav = document.getElementById('nav-menu');
-      hamburger.addEventListener('click', function () {
-        nav.classList.toggle('active');
-      });
-    });
-  </script>
+
 </body>
 </html>
