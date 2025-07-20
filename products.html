@@ -73,18 +73,21 @@
         </p>
 
         <h4>Enquire Now</h4>
-        <form action="mailto:ganeshpandey.ee@gmail.com" method="post" enctype="text/plain">
-          <label for="name">Your Name:</label><br />
-          <input type="text" id="name" name="name" required /><br />
-
-          <label for="email">Your Email:</label><br />
-          <input type="email" id="email" name="email" required /><br />
-
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea><br />
-
-          <input type="submit" value="Send Inquiry" />
-        </form>
+<form
+  action="https://formspree.io/f/xovvobkj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
       </div>
     </section>
   </main>
