@@ -1,0 +1,41 @@
+<!-- music.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+</head>
+<body>
+  <audio id="bg-music" src="music.mp3" preload="auto" loop></audio>
+  <button id="play-music-btn">🔊 Play Music</button>
+
+  <script>
+    const btn = document.getElementById('play-music-btn');
+    const music = document.getElementById('bg-music');
+
+    btn.addEventListener('click', () => {
+      music.play();
+      btn.style.display = 'none';
+    });
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+    }
+    #play-music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      padding: 10px 15px;
+      border: none;
+      background-color: #005eff;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</body>
+</html>
