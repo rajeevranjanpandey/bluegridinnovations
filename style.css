@@ -189,3 +189,21 @@ footer {
     display: block;
   }
 }
+.bottom-nav ul li {
+  list-style: none;
+}
+
+.bottom-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.bottom-nav ul li a:hover,
+.bottom-nav ul li a.active {
+  background-color: #007acc;
+}
+
