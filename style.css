@@ -293,5 +293,9 @@ footer {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+body {
+  cursor: url('images/dolphin-cursor.gif'), auto;
+}
+
 
 
