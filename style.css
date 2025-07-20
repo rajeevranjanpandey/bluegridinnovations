@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  cursor: url('images/dolphin.gif'), auto;
+}
+
 
 body {
   background-color: #f4f9fb;
@@ -292,9 +296,6 @@ footer {
 .team-info p {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-body {
-  cursor: url('images/dolphin.gif'), auto;
 }
 
 
