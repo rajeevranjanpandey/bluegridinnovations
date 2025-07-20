@@ -3,26 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlueGrid Innovations - TankiFi</title>
+  <title>BlueGrid Innovations | TankiFi</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <div class="company-name">BlueGrid Innovations</div>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
+
+<header>
+  <div class="top-header">
+    <div class="logo">BlueGrid Innovations</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+  <nav class="bottom-nav" id="nav-menu">
+    <ul>
+      <a active="Home" href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="history.html">History</a>
       <a href="products.html">Products</a>
-    </nav>
-  </header>
+    </ul>
+  </nav>
+</header>
 
-  <main>
+<main>
+ 
+</main>
 
-  </main>
+<footer>
+  &copy; 2025 BlueGrid Innovations | Smart Living Solutions
+</footer>
 
-  <footer>
-    <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
-  </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.bottom-nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
+
 </body>
 </html>
