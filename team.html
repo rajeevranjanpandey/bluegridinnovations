@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team | BlueGrid Innovations</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">BlueGrid Innovations</div>
+      <div class="hamburger" id="hamburger">☰</div>
+      <nav class="bottom-nav" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="team.html" class="active">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="team-section">
+      <h1>Meet Our Team</h1>
+      <div class="team-member">
+        
+        <div class="team-info">
+          <h2>Ganesh Kumar Pandey</h2>
+          <h4>Founder & Innovator</h4>
+          <p>I am the founder of BlueGrid Innovations — a research-driven initiative focused on smart, affordable, and sustainable water and energy solutions. I combine my passion for engineering with real-world problems to build devices that matter. My goal is to make technology simple, useful, and impactful for every home.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav-menu');
+      hamburger.addEventListener('click', function () {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
