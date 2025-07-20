@@ -245,5 +245,53 @@ footer {
 .cta-button:hover {
   background-color: #005c99;
 }
+.team-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-section h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info h2 {
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+  color: #007acc;
+}
+
+.team-info h4 {
+  margin: 0 0 15px 0;
+  color: #555;
+  font-weight: normal;
+}
+
+.team-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 
