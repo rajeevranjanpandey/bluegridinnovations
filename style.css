@@ -330,6 +330,11 @@ footer {
   margin: 5px 0;
   line-height: 1.5;
 }
+.team-member:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 
