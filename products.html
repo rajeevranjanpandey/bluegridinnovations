@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlueGrid Innovations </title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>BlueGrid Innovations | Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.ico" />
+  <meta name="theme-color" content="#003366" />
 </head>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav-menu');
 
-    hamburger.addEventListener('click', function () {
-      nav.classList.toggle('active');
-    });
-  });
-</script>
-  
 <body>
 
 <header>
@@ -24,77 +17,85 @@
     <div class="logo">BlueGrid Innovations</div>
     <div class="hamburger" id="hamburger">&#9776;</div>
   </div>
-  <nav class="bottom-nav" id="nav-menu">
+  <nav class="bottom-nav" id="nav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="history.html">History</a></li>
-      <li><a class= "active" href="products.html">Products</a></li>
+      <li><a class="active" href="products.html">Products</a></li>
       <li><a href="team.html">Team</a></li>
-      
     </ul>
   </nav>
 </header>
 
-  <main>
-    <section class="page-content">
-      <h2>Our Products</h2>
+<main>
+  <section class="page-content">
+    <h2>Our Products</h2>
 
-      <div class="product">
-        <h3>TankiFi – Smart Water Tank Monitor</h3>
-        <img src="images/cartoon1.png" alt="TankiFi Product Illustration" class="product-img" />
-        
-        <p>
-          Water overflow is a daily issue in most homes, especially when there's no monitoring mechanism. TankiFi is built to solve this common problem for good.
-        </p>
+    <div class="product">
+      <h3>TankiFi – Smart Water Tank Monitor</h3>
+      <img src="images/cartoon1.png" alt="TankiFi Product Illustration" class="product-img" />
+      
+      <p>
+        Water overflow is a daily issue in most homes, especially when there's no monitoring mechanism.
+        <strong>TankiFi</strong> is built to solve this common problem for good.
+      </p>
 
-        <h4>Why You Need TankiFi</h4>
-        <ul>
-          <li>Save up to 20,000 litres of water annually per household</li>
-          <li>Avoid tank overflow and unnecessary electricity usage</li>
-          <li>Monitor water levels live on the display unit at your home</li>
-        </ul>
+      <h4>Why You Need TankiFi</h4>
+      <ul>
+        <li>Save up to 20,000 litres of water annually per household</li>
+        <li>Avoid tank overflow and unnecessary electricity usage</li>
+        <li>Monitor water levels live on the display unit at your home</li>
+      </ul>
 
-        <h4>How It Works</h4>
-        <p>
-          TankiFi consists of two small units:
-        </p>
-        <ol>
-          <li><strong>Tank Unit:</strong> Installed near your overhead tank with a water level sensor and WiFi transmitter.</li>
-          <li><strong>Display Unit:</strong> Placed inside your house to show live water level updates.</li>
-        </ol>
+      <h4>How It Works</h4>
+      <p>
+        TankiFi consists of two small units:
+      </p>
+      <ol>
+        <li><strong>Tank Unit:</strong> Installed near your overhead tank with a water level sensor and Wi-Fi transmitter.</li>
+        <li><strong>Display Unit:</strong> Placed inside your house to show live water level updates.</li>
+      </ol>
 
-        <h4>Technologies Used</h4>
-        <p>
-          - ESP8266 Wi-Fi Modules  
-          - Waterproof Ultrasonic Sensor  
-          - OLED Display for real-time monitoring  
-          - LoRa/WiFi communication options  
-        </p>
+      <h4>Technologies Used</h4>
+      <ul>
+        <li>ESP8266 Wi-Fi Modules</li>
+        <li>Waterproof Ultrasonic Sensor</li>
+        <li>OLED Display for real-time monitoring</li>
+        <li>LoRa/WiFi communication options</li>
+      </ul>
 
-        <h4>Enquire Now</h4>
-<form
-  action="https://formspree.io/f/xovvobkj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-      </div>
-    </section>
-    <a href="team.html" class="cta-button">Meet our Team</a>
-  </main>
+      <h4>Enquire Now</h4>
+      <form action="https://formspree.io/f/xovvobkj" method="POST">
+        <label for="email">Your email:</label>
+        <input type="email" name="email" id="email" required>
 
-  <footer>
-    <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
-  </footer>
+        <label for="message">Your message:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Inquiry">
+      </form>
+    </div>
+  </section>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="team.html" class="cta-button">Meet Our Team</a>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>
