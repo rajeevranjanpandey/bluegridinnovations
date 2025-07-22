@@ -66,15 +66,20 @@
       </ul>
 
       <h4>Enquire Now</h4>
-      <form action="https://formspree.io/f/xovvobkj" method="POST">
-        <label for="email">Your email:</label>
-        <input type="email" name="email" id="email" required>
+<form action="https://formspree.io/f/xovvobkj" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required placeholder="you@example.com">
+  </div>
 
-        <label for="message">Your message:</label>
-        <textarea name="message" id="message" rows="5" required></textarea>
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea name="message" id="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+  </div>
 
-        <input type="submit" value="Send Inquiry">
-      </form>
+  <button type="submit" class="cta-button">Send Inquiry</button>
+</form>
+
     </div>
   </section>
 
