@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlueGrid Innovations </title>
+  <title>BlueGrid Innovations</title>
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="images/favicon.ico" />
+  <meta name="theme-color" content="#003366" />
 </head>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', function () {
-      nav.classList.toggle('active');
-    });
-  });
-</script>
-  
 <body>
 
 <header>
@@ -25,9 +21,9 @@
     <div class="logo">BlueGrid Innovations</div>
     <div class="hamburger" id="hamburger">&#9776;</div>
   </div>
-  <nav class="bottom-nav" id="nav-menu">
+  <nav class="bottom-nav" id="nav">
     <ul>
-      <li><a class= "active" href="index.html">Home</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="history.html">History</a></li>
       <li><a href="products.html">Products</a></li>
@@ -35,28 +31,32 @@
     </ul>
   </nav>
 </header>
- 
 
 <main>
-   
   <section class="hero-welcome">
     <h1>Welcome to <span class="brand">BlueGrid Innovations</span></h1>
     <p>Smart living made simple.</p>
     <p>Bringing automation and sustainability to your home.</p>
     <p>We create intuitive IoT solutions that help you save water, energy, and time without complex setups or costly systems.</p>
     <a href="about.html" class="cta-button">Learn More About Us</a>
-     
   </section>
+
   <img src="images/cartoon2.png" alt="Smart Home" class="product-img" />
 </main>
-
 
 <footer>
   &copy; 2025 BlueGrid Innovations | Smart Living Solutions
 </footer>
 
-
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
 
 </body>
 </html>
