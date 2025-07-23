@@ -10,11 +10,17 @@
 }
 
 body {
-  background-color: #f4f9fb;
+  background-image: url('images/cartoon2.jpg'); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: #1e2a38;
   line-height: 1.6;
   font-size: 16px;
 }
+
 
 /* Header */
 header {
