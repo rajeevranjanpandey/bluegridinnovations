@@ -14,8 +14,7 @@ body {
   color: #1e2a38;
   line-height: 1.6;
   font-size: 16px;
-}  , this is the body of css
-
+}
 
 /* Header */
 header {
@@ -160,9 +159,8 @@ footer {
     display: block;
   }
 }
-/* =========================
-   Modern Contact Form
-========================= */
+
+/* Modern Contact Form */
 .modern-form {
   max-width: 600px;
   margin: 40px auto;
@@ -188,10 +186,144 @@ footer {
   outline: none;
 }
 
-/* Make button consistent with your other CTAs */
 .modern-form .cta-button {
   width: 100%;
   text-align: center;
   padding: 14px 0;
 }
 
+/* Product Page Enhancements */
+.product-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.highlight-box {
+  background-color: #eef7ff;
+  border-left: 5px solid #007acc;
+  padding: 20px 25px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.highlight-box ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #003366;
+}
+
+.section {
+  margin: 30px 0;
+}
+
+.section h4 {
+  color: #003366;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.comparison-table th {
+  background-color: #003366;
+  color: #fff;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Enquiry Section */
+.inquiry-section {
+  background-color: #f3f9ff;
+  border: 1px solid #cde6f9;
+  padding: 35px 25px;
+  border-radius: 10px;
+  margin-top: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.inquiry-section h4 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1e2a38;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.contact-form .cta-button {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .cta-button:hover {
+  background-color: #005c99;
+}
