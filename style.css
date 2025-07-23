@@ -125,13 +125,15 @@ main {
 
 /* Product Image */
 .product-img {
-  max-width: 90%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   display: block;
-  margin: 40px auto 0;
+  margin: 30px auto 0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 /* Footer */
 footer {
