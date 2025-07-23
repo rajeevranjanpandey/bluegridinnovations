@@ -10,17 +10,11 @@
 }
 
 body {
-  background-image: url('images/cartoon2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-
-  backdrop-filter: blur(6px); /* This will blur background content */
-  -webkit-backdrop-filter: blur(6px);
-}
-
+  background-color: #f4f9fb;
+  color: #1e2a38;
+  line-height: 1.6;
+  font-size: 16px;
+}  , this is the body of css
 
 
 /* Header */
