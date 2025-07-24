@@ -162,37 +162,6 @@ footer {
   }
 }
 
-/* Modern Contact Form */
-.modern-form {
-  max-width: 600px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.modern-form input[type="email"],
-.modern-form textarea {
-  width: 100%;
-  padding: 14px 18px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  transition: border 0.3s ease;
-  font-family: inherit;
-}
-
-.modern-form input:focus,
-.modern-form textarea:focus {
-  border-color: #007acc;
-  outline: none;
-}
-
-.modern-form .cta-button {
-  width: 100%;
-  text-align: center;
-  padding: 14px 0;
-}
 
 /* Product Page Enhancements */
 .product-title {
@@ -329,5 +298,45 @@ footer {
 .contact-form .cta-button:hover {
   background-color: #005c99;
 }
+@media (max-width: 600px) {
+  .logo-brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-brand img {
+    height: 40px;
+  }
+
+  .logo-text h1 {
+    font-size: 16px;
+  }
+}
+
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #1e2a38;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+
 
 
