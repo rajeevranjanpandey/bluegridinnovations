@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueGrid Innovations | PlantGuard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.ico" />
+  <meta name="theme-color" content="#003366" />
+</head>
+
+<body>
+
+<header>
+  <div class="top-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="BlueGrid Logo" class="logo-img" />BlueGrid Innovations
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+  <nav class="bottom-nav" id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-content">
+    <h2>🌿 PlantGuard – Smart Plant Watering Assistant</h2>
+
+    <img src="images/plantguard.gif" alt="PlantGuard Product Illustration" class="product-img" />
+
+    <p class="intro-text">
+      <strong>PlantGuard</strong> is your smart companion for healthy, hydrated plants — whether you're home or away. Designed for busy urban lifestyles, it automates daily watering with precision and ease.
+    </p>
+
+    <div class="highlight-box">
+      <h4>🌟 Why Choose PlantGuard?</h4>
+      <ul>
+        <li>💧 Water plants daily without lifting a finger</li>
+        <li>📆 Adjustable schedule with fixed or custom times</li>
+        <li>🌱 Compact, clean design for indoor or balcony use</li>
+        <li>🔌 Just plug in and forget — it handles the rest</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>🛠️ How It Works</h4>
+      <p>PlantGuard delivers just the right amount of water through a smart, scheduled system:</p>
+      <ol>
+        <li><strong>Timer Controller:</strong> Sets the time for watering daily</li>
+        <li><strong>Control Logic:</strong> Activates the water flow</li>
+        <li><strong>Flow Valve:</strong> Opens only for the programmed duration</li>
+        <li><strong>Outlet Pipe:</strong> Delivers water directly to the plant base or drip line</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h4>🔩 Installation Guide</h4>
+      <ul>
+        <li>📍 Place the unit near your plant with access to water</li>
+        <li>🔗 Connect the inlet from your tank/tap and the outlet to the plant pot</li>
+        <li>⚡ Plug into a power source using the included adapter</li>
+        <li>🕒 Set your preferred watering time via mobile or onboard controls</li>
+        <li>✅ Run a test to confirm smooth water flow</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>📋 Technical Specifications</h4>
+      <ul>
+        <li><strong>Operating Voltage:</strong> 5V – 12V DC</li>
+        <li><strong>Water Control:</strong> Electric solenoid valve</li>
+        <li><strong>Scheduling:</strong> Fixed daily or user-configurable</li>
+        <li><strong>Connectivity:</strong> Wi-Fi enabled</li>
+        <li><strong>Interface:</strong> Mobile/Web or onboard button</li>
+        <li><strong>Enclosure:</strong> Compact, splash-resistant</li>
+        <li><strong>Water Source:</strong> Compatible with tanks, bottles, or taps</li>
+        <li><strong>Flow Duration:</strong> User-defined (10s–300s)</li>
+      </ul>
+    </div>
+
+<section class="inquiry-section">
+      <h4>📩 Enquire Now</h4>
+      <form action="https://formspree.io/f/xovvobkj" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+        </div>
+
+        <button type="submit" class="cta-button">Send Inquiry</button>
+      </form>
+    </section>
+
+  </section>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="products.html" class="cta-button">← Back to Products</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
