@@ -316,7 +316,7 @@ footer {
 
 .logo-brand {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 15px;
 }
 
