@@ -389,4 +389,35 @@ footer {
     font-size: 16px;
   }
 }
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #ffffff;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #1e2a38;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
 
