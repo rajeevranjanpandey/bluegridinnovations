@@ -119,6 +119,24 @@ main {
 .cta-button:hover {
   background-color: #005c99;
 }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+}
 
 .product-img {
   width: 100%;
