@@ -329,3 +329,14 @@ footer {
 .contact-form .cta-button:hover {
   background-color: #005c99;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
