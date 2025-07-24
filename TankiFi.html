@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueGrid Innovations | TankiFi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.ico" />
+  <meta name="theme-color" content="#003366" />
+</head>
+
+<body>
+
+<header>
+  <div class="top-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="BlueGrid Logo" class="logo-img" />BlueGrid Innovations
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+  <nav class="bottom-nav" id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-content">
+    <h2>🚰 TankiFi – Smart Wireless Water Level Monitor</h2>
+
+    <img src="images/cartoon3.gif" alt="TankiFi Product Illustration" class="product-img" />
+
+    <p class="intro-text">
+      <strong>TankiFi</strong> puts an end to tank overflow and blind guesswork with a reliable, smart water-level monitor.
+      Perfect for homes, buildings, and farms.
+    </p>
+
+    <div class="highlight-box">
+      <h4>🌟 Why Choose TankiFi?</h4>
+      <ul>
+        <li>💧 Save up to 20,000 litres of water annually</li>
+        <li>⚡ Prevent overflows and reduce energy waste</li>
+        <li>📊 Get live tank levels on an in-home display</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>🛠️ How It Works</h4>
+      <p>TankiFi comes in two sleek, wire-free units:</p>
+      <ol>
+        <li><strong>Tank Unit:</strong> Mounted near your tank. It measures level using ultrasonic sensing.</li>
+        <li><strong>Display Unit:</strong> Kept indoors. It shows real-time tank data: volume and % full.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h4>🧩 Available Versions</h4>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Connection</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>TankiFi Standard</strong></td>
+            <td>Connects to existing home Wi-Fi</td>
+            <td>Homes with reliable Wi-Fi</td>
+          </tr>
+          <tr>
+            <td><strong>TankiFi Router Edition</strong></td>
+            <td>Includes local Wi-Fi hotspot</td>
+            <td>Independent or offline setups</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h4>🔧 Technology Inside</h4>
+      <ul>
+        <li>Smart waterproof sensor mounted on the top of the tank (non-contact)</li>
+        <li>Smart filtering algorithms and noise elimination for stable readings</li>
+        <li>Wireless communication (supports existing Wi-Fi or optional router)</li>
+        <li>Indoor TFT display with real-time tank level, volume in liters, and percentage</li>
+      </ul>
+    </div>
+
+    <section class="inquiry-section">
+      <h4>📩 Enquire Now</h4>
+      <form action="https://formspree.io/f/xovvobkj" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+        </div>
+
+        <button type="submit" class="cta-button">Send Inquiry</button>
+      </form>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="products.html" class="cta-button">← Back to Products</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 BlueGrid Innovations. All rights reserved.</p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
