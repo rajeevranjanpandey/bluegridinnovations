@@ -2,131 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlueGrid Innovations</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Living Solutions | BlueGrid Innovations</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   
-  <!-- Favicon (optional) -->
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" />
   <meta name="theme-color" content="#003366" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<header>
-  <div class="top-header">
-    <div class="logo">
-  <img src="images/logo.png" alt="BlueGrid Logo" class="logo-img" />BlueGrid Innovations
-    </div>
-
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </div>
-  <nav class="bottom-nav" id="nav">
-    <ul>
-      <li><a  href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a class="active" href="smartliving.html">Smart Living Solutions</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="vision.html">Vision & Mission</a></li>
-      <li><a href="investors.html"> Investors & Partners </a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-<section class="bg-white py-12 px-6 md:px-16" id="portfolio">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Smart Living Portfolio</h2>
-    <p class="text-gray-600 mb-10 text-lg">
-      At BlueGrid Innovations, we solve real-life household problems with affordable, IoT-powered solutions — designed for every Indian home.
-    </p>
-
-    <div class="grid gap-8 md:grid-cols-2">
-      
-      <!-- TankiFi -->
-      <div class="bg-blue-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-blue-700 mb-2">TankiFi</h3>
-        <p class="text-gray-700">Smart water tank monitor with auto motor control, dry-run protection, and real-time display.</p>
-      </div>
-
-      <!-- PlantGuard -->
-      <div class="bg-green-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-green-700 mb-2">PlantGuard</h3>
-        <p class="text-gray-700">Automated plant watering timer system with configurable duration, ideal for balconies and busy schedules.</p>
-      </div>
-
-      <!-- SafeKitchen -->
-      <div class="bg-red-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-red-700 mb-2">SafeKitchen</h3>
-        <p class="text-gray-700">Gas leak detector with auto cutoff and buzzer alerts to ensure kitchen safety.</p>
-      </div>
-
-      <!-- RainAlert -->
-      <div class="bg-cyan-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-cyan-700 mb-2">RainAlert</h3>
-        <p class="text-gray-700">Smart rain sensor for balconies that alerts when it starts raining — protect your drying clothes.</p>
-      </div>
-
-      <!-- HeatAutoCut -->
-      <div class="bg-yellow-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-yellow-700 mb-2">HeatAutoCut</h3>
-        <p class="text-gray-700">Timer-based geyser controller with overheat protection and power-saving features.</p>
-      </div>
-
-      <!-- PowerTrack Mini -->
-      <div class="bg-purple-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-purple-700 mb-2">PowerTrack Mini</h3>
-        <p class="text-gray-700">Track your electricity usage room-wise and reduce your bill with actionable insights.</p>
-      </div>
-
-      <!-- AutoSense -->
-      <div class="bg-indigo-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">AutoSense</h3>
-        <p class="text-gray-700">Smart occupancy sensor to auto turn off lights and fans in unused rooms.</p>
-      </div>
-
-      <!-- FridgeGuard -->
-      <div class="bg-pink-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-pink-700 mb-2">FridgeGuard</h3>
-        <p class="text-gray-700">Prevents food spoilage by alerting when fridge doors are left open too long.</p>
-      </div>
-
-      <!-- GridLink -->
-      <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">GridLink</h3>
-        <p class="text-gray-700">Plug-in Wi-Fi repeater for balconies and corners — improves coverage seamlessly.</p>
-      </div>
-
-      <!-- RoutineMate -->
-      <div class="bg-orange-50 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-orange-700 mb-2">RoutineMate</h3>
-        <p class="text-gray-700">Wall-mountable visual and audio scheduler — perfect for school routines and reminders.</p>
-      </div>
-
-    </div>
-  </div>
+<!-- Hero Header -->
+<section class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-16 px-6 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">Smart Living Solutions</h1>
+  <p class="text-lg max-w-2xl mx-auto">
+    Everyday household problems — reimagined and solved by BlueGrid's smart, affordable devices.
+  </p>
 </section>
 
+<!-- Product Grid Section -->
+<main class="max-w-7xl mx-auto py-12 px-6 lg:px-12">
+  <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- TankiFi -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-blue-700 mb-2">TankiFi</h3>
+      <p>Smart water tank monitor with auto motor control, dry-run protection, and real-time display.</p>
+    </div>
+
+    <!-- PlantGuard -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-green-700 mb-2">PlantGuard</h3>
+      <p>Automated plant watering timer system with configurable duration, ideal for balconies and busy schedules.</p>
+    </div>
+
+    <!-- SafeKitchen -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-red-700 mb-2">SafeKitchen</h3>
+      <p>Gas leak detector with auto cutoff and buzzer alerts to ensure kitchen safety.</p>
+    </div>
+
+    <!-- RainAlert -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-cyan-700 mb-2">RainAlert</h3>
+      <p>Smart rain sensor for balconies that alerts when it starts raining — protect your drying clothes.</p>
+    </div>
+
+    <!-- HeatAutoCut -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-yellow-600 mb-2">HeatAutoCut</h3>
+      <p>Timer-based geyser controller with overheat protection and power-saving features.</p>
+    </div>
+
+    <!-- PowerTrack Mini -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-purple-700 mb-2">PowerTrack Mini</h3>
+      <p>Track your electricity usage room-wise and reduce your bill with actionable insights.</p>
+    </div>
+
+    <!-- AutoSense -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">AutoSense</h3>
+      <p>Smart occupancy sensor to auto turn off lights and fans in unused rooms.</p>
+    </div>
+
+    <!-- FridgeGuard -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-pink-700 mb-2">FridgeGuard</h3>
+      <p>Prevents food spoilage by alerting when fridge doors are left open too long.</p>
+    </div>
+
+    <!-- GridLink -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">GridLink</h3>
+      <p>Plug-in Wi-Fi repeater for balconies and corners — improves coverage seamlessly.</p>
+    </div>
+
+    <!-- RoutineMate -->
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg border border-gray-100 transition">
+      <h3 class="text-xl font-semibold text-orange-700 mb-2">RoutineMate</h3>
+      <p>Wall-mountable visual and audio scheduler — perfect for school routines and reminders.</p>
+    </div>
+
+  </div>
 </main>
 
-<footer>
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6 text-center">
   &copy; 2025 BlueGrid Innovations | Smart Living Solutions
 </footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav');
-    hamburger.addEventListener('click', function () {
-      nav.classList.toggle('active');
-    });
-  });
-</script>
 
 </body>
 </html>
