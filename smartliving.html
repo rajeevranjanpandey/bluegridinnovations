@@ -2,29 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Living Solutions | BlueGrid Innovations</title>
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueGrid Innovations</title>
+  <link rel="stylesheet" href="style.css"/>
 
   <!-- Google Font: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   
-  <!-- Favicon -->
+  <!-- Favicon (optional) -->
   <link rel="icon" href="images/favicon.ico" />
   <meta name="theme-color" content="#003366" />
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-<!-- Hero Header -->
+<header>
+  <div class="top-header">
+    <div class="logo">
+  <img src="images/logo.png" alt="BlueGrid Logo" class="logo-img" />BlueGrid Innovations
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+  <nav class="bottom-nav" id="nav">
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="smartliving.html">Smart Living Solutions</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="vision.html">Vision & Mission</a></li>
+      <li><a href="investors.html"> Investors & Partners </a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- Hero Section -->
 <section class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-16 px-6 text-center">
   <h1 class="text-4xl md:text-5xl font-bold mb-4">Smart Living Solutions</h1>
   <p class="text-lg max-w-2xl mx-auto">
@@ -98,11 +113,21 @@
 
   </div>
 </main>
+</main>
 
-<!-- Footer -->
-<footer class="bg-blue-900 text-white py-6 text-center">
+<footer>
   &copy; 2025 BlueGrid Innovations | Smart Living Solutions
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
+  });
+</script>
 
 </body>
 </html>
