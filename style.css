@@ -405,6 +405,7 @@ footer {
   .hero-text {
     flex: 1;
     padding-right: 2rem;
+    font:20;
   }
 
   .hero-video {
